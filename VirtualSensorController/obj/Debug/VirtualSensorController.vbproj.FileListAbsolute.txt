@@ -1,0 +1,1 @@
+C:\MBARK_Build\VirtualSensorController\bin\VirtualSensorController.exe.config

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+  <singleOutput enabled="true" path="InfrastructureMessages.autogen.vb">
+    <header>Imports System
+Imports System.Resources
+Imports System.Threading
+Imports System.Globalization
+
+Namespace Mbark.InfrastructureMessages
+</header>
+    <footer>End Namespace
+</footer>
+  </singleOutput>
+   <propertySets>
+    <propertySet name="InfrastructureMessages" template="..\..\Code Generation\ResourceManager.cst">
+      <property name="ClassModifier">Public</property>
+      <property name="DefaultCulture">en-US</property>
+      <property name="ResxFilename">C:\MBARK\Solution2008\Infrastructure\Messages\en-US.resx</property>
+      <property name="ClassName">Messages</property>
+      <property name="ResourceRootName">en-US</property>  
+    </propertySet>
+  </propertySets>
+</codeSmith>

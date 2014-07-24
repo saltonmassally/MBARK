@@ -1,0 +1,237 @@
+//This is a sample BiCCL file.  This file defines a workflow for a single MBARK session.
+
+localizations {
+	
+	SubjectCarryingGlasses {
+		en-US = "Subject is carrying glasses.";
+		en-UK = "Subject is carrying spectacles.";
+		de-DE = "Thema trägt Gläser.";
+	}
+
+	SubjectNotCarryingGlasses {
+		en-US = "Subject is not carrying glasses.";
+		en-UK = "Subject is not carrying spectacles.";
+		de-DE = "Thema trägt nicht Gläser.";
+	}
+
+	SubjectIsWearingGlasses {
+		en-US = "Subject is wearing glasses.";
+		en-UK = "Subject is not wearing spectacles.";
+		de-DE = "Thema trägt Gläser.";
+	}
+
+	SubjectIsNotWearingGlasses {
+		en-US = "Subject is not wearing glasses.";
+		en-UK = "Subject is not wearing spectacles.";
+		de-DE = "Thema trägt nicht Gläser.";
+	}
+
+	GlassesOn {
+		en-US = "Glasses on.";
+		en-UK = "Spectacles on.";
+		de-DE = "Gläser an.";
+	}
+	
+	GlassesOff {
+		en-US = "Glasses off.";
+		en-UK = "Spectacles off.";
+		de-DE = "Gläser weg.";
+	}
+
+	SubjectMustBeCarryingGlasses {
+		en-US = "Subject must be carrying glasses.";
+		en-UK = "Subject must be carrying spectacles.";
+		de-DE = "Thema muß Gläser tragen.";
+	}
+
+}
+
+//NOTE: Since there is no requirement that the condition names exist in the localization
+//library, the condition description is filled by:
+// 1. Checking the message library
+// 2. using the standalone true string if it isn't empty
+// 3. adding the condition name to the library, which will only produce an en-US localization.
+
+experimentalConditions {
+
+	static boolean carryingGlasses {
+
+		standaloneMessages {
+			trueMessage = SubjectCarryingGlasses;
+			falseMessage = SubjectNotCarryingGlasses;
+			invalidMessage = none;
+		}
+
+		compoundMessages {
+			trueMessage = none;
+			falseMessage = none;
+			invalidMessage = none;
+		}
+
+		requires { modality == "Face" || submodality in { "Face" }; }
+		unmetPrerequisiteMessage = none;
+	}
+
+	boolean wearingGlasses {
+		initialValue = false;
+		standaloneMessages {
+			trueMessage = SubjectIsWearingGlasses;
+			falseMessage = SubjectIsNotWearingGlasses;
+			invalidMessage = none;
+		}
+
+		compoundMessages {
+			trueMessage = GlassesOn;
+			falseMessage = GlassesOff;
+			invalidMessage = none;
+		}
+
+		requires { carryingGlasses == true; }
+		unmetPrerequisiteMessage = SubjectMustBeCarryingGlasses;
+	}
+}
+
+equivalenceClasses {
+
+	NotCarryingGlassesEquivalence{
+		~carryingGlasses || ~(carryingGlasses && ~wearingGlasses);
+	}
+
+}
+
+sensors{
+
+	VirtualFingerprint {
+		libraryFileName = "Mbark.VirtualSensor.dll";
+		sensorNamespace = "Mbark.Sensors";
+		sensorClassName = "VirtualFingerprint";
+		configurationClassName = "VirtualSensorsConfiguration";
+	}
+
+	VirtualFace {
+		libraryFileName = "Mbark.VirtualSensor.dll";
+		sensorNamespace = "Mbark.Sensors";
+		sensorClassName = "VirtualFace";
+		configurationClassName = "VirtualSensorsConfiguration";
+	}
+
+	VirtualIris {
+		libraryFileName = "Mbark.VirtualSensor.dll";
+		sensorNamespace = "Mbark.Sensors";
+		sensorClassName = "VirtualIris";
+		configurationClassName = "VirtualSensorsConfiguration";
+	}
+
+}
+
+
+//NOTE: All parameters in configurations should be capitalized.
+//These are mapped DIRECTLY to the method name, so the parameter name here needs
+//to have the same name as the property we're trying to set, including capitalization.
+
+configurations {
+	
+	VirtualSensorsConfiguration VirtualFingerprintConf {
+		CaptureCriticalTime = 3000; // 3 sec
+		CaptureExpirationTime = 12000; // 12 sec
+		DownloadExpirationTime = 0; // 0 sec
+	}
+
+	VirtualSensorsConfiguration VirtualFaceConf {
+		CaptureCriticalTime = 0; // 3 sec
+		CaptureExpirationTime = 20000; // 12 sec
+		DownloadExpirationTime = 15000; // 0 sec
+	}
+
+	VirtualSensorsConfiguration VirtualIrisConf {
+		CaptureCriticalTime = 3000; // 3 sec
+		CaptureExpirationTime = 20000; // 12 sec
+		DownloadExpirationTime = 0; // 0 sec
+	}
+}	
+
+tasks {
+
+	faceCapture {
+		sensor = VirtualFace;
+		configuration = VirtualFaceConf;
+		intendedSubmodality = "Face";
+		reassignableSubmodalities = none;
+	}
+
+	leftSlap {
+		sensor = VirtualFingerprint;
+		configuration = VirtualFingerprintConf;
+		intendedSubmodality = "LeftSlap";
+		reassignableSubmodalities = { "LeftSlap", "RightSlap", "ThumbsSlap"};
+	}
+
+	rightSlap {
+		sensor = VirtualFingerprint;
+		configuration = VirtualFingerprintConf;
+		intendedSubmodality = "RightSlap";
+		reassignableSubmodalities = {"LeftSlap", "RightSlap", "ThumbsSlap"};
+	}
+
+	thumbsSlap {
+		sensor = VirtualFingerprint;
+		configuration = VirtualFingerprintConf;
+		intendedSubmodality = "ThumbsSlap";
+		reassignableSubmodalities = {"LeftSlap", "RightSlap", "ThumbsSlap"};
+	}
+
+
+	leftIris {
+		sensor = VirtualIris;
+		configuration = VirtualIrisConf;
+		intendedSubmodality = "LeftIris";
+		reassignableSubmodalities = {
+			"LeftIris", "RightIris"};
+	}
+
+	rightIris {
+		sensor = VirtualIris;
+		configuration = VirtualIrisConf;
+		intendedSubmodality = "RightIris";
+		reassignableSubmodalities = {
+			"LeftIris", "RightIris" };
+	}
+}
+
+
+
+initialState {
+
+	carryingGlasses = false;
+	wearingGlasses = false;
+
+}
+
+workflow {
+
+	perform 1 leftSlap;
+	perform 1 rightSlap;
+	perform 1 thumbsSlap;
+
+	perform 1 leftIris;
+	perform 1 rightIris;
+
+	if (carryingGlasses == true) { 
+	
+		perform 1 faceCapture with { 
+					carryingGlasses = true, 
+					wearingGlasses = true
+		};
+
+		perform 1 faceCapture with {
+					carryingGlasses = true,
+					wearingGlasses = false
+		};
+	} else {
+		perform 1 faceCapture with {
+					carryingGlasses = false,
+					wearingGlasses = false
+		};
+	}
+
+}

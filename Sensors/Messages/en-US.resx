@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GeneralPollingCanceledException" xml:space="preserve">
+    <value>Polling Canceled</value>
+  </data>
+  <data name="GeneralCaptureTimeoutException" xml:space="preserve">
+    <value>Capture timed out</value>
+  </data>
+  <data name="GeneralUnexpectedMissingBodyPartException" xml:space="preserve">
+    <value>Received unexpected missing body part from sensor.</value>
+  </data>
+  <data name="SpecificUnexpectedMissingBodyPartException" xml:space="preserve">
+    <value>Received missing body part '{0}' when expecting body part(s) '{1}'.</value>
+    <comment>missingBodyParts, expectedBodyParts; BodyPartCollection, BodyPartCollection</comment>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="TaskNumber" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Sensor" xml:space="preserve">
+    <value>Sensor</value>
+  </data>
+  <data name="Conditions" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="FailedAttempts" xml:space="preserve">
+    <value>Failed Attempts</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SensorTimeoutSensorTimeoutCaption" xml:space="preserve">
+    <value>Sensor Timeout</value>
+  </data>
+  <data name="SensorTimeoutNotification" xml:space="preserve">
+    <value>The sensor did not detect any activity within a specified (timeout) period.
+Did the subject attempt to use the sensor?</value>
+  </data>
+  <data name="DoubleClickToSkipToTask" xml:space="preserve">
+    <value>Double-click to skip to task {0}.</value>
+    <comment>taskIndex; Integer</comment>
+  </data>
+  <data name="GeneralCaptureFailureException" xml:space="preserve">
+    <value>Capture failure</value>
+  </data>
+  <data name="CancelTaskNotification" xml:space="preserve">
+    <value>You have not attempted the task enough times.</value>
+  </data>
+  <data name="CancelTaskInstruction" xml:space="preserve">
+    <value>Please indicate why you are skipping/cancelling the task.</value>
+  </data>
+  <data name="CurrentlyAssignedTask" xml:space="preserve">
+    <value>Currently assigned task</value>
+  </data>
+  <data name="XsIndicateInjuries" xml:space="preserve">
+    <value>'X's indicate the location of injuries</value>
+  </data>
+  <data name="Irises" xml:space="preserve">
+    <value>Irises</value>
+  </data>
+  <data name="PartsIndicatedNotYetSufficientForSkipping" xml:space="preserve">
+    <value>The inaccessible parts indicated do not yet justify skipping the task</value>
+  </data>
+  <data name="Injury" xml:space="preserve">
+    <value>Injury</value>
+  </data>
+  <data name="InaccessibleBodyPart" xml:space="preserve">
+    <value>Inaccessible Body Part</value>
+  </data>
+  <data name="InaccessibleBodyParts" xml:space="preserve">
+    <value>Inaccessible Body Parts</value>
+  </data>
+  <data name="InaccessibleBodyPartOrParts" xml:space="preserve">
+    <value>Inaccessible Body Part(s)</value>
+  </data>
+  <data name="SubjectLeftSession" xml:space="preserve">
+    <value>Subject left session</value>
+  </data>
+  <data name="PerformingDemoOrTesting" xml:space="preserve">
+    <value>Performing demo or testing</value>
+  </data>
+  <data name="SubjectDeclines" xml:space="preserve">
+    <value>Subject declines this task</value>
+  </data>
+  <data name="SensorMalfunction" xml:space="preserve">
+    <value>Sensor is malfunctioning</value>
+  </data>
+  <data name="OtherReasonWithSpecifyAndColon" xml:space="preserve">
+    <value>Other reason (specify):</value>
+  </data>
+  <data name="SubjectIsCarryingGlasses" xml:space="preserve">
+    <value>Subject is a glasses wearer</value>
+  </data>
+  <data name="SubjectHasGlassesOnPerson" xml:space="preserve">
+    <value>Subject has glasses on their person</value>
+  </data>
+  <data name="SubjectCurrentlyWearingGlasses" xml:space="preserve">
+    <value>Subject is wearing glasses</value>
+  </data>
+  <data name="GlassesOn" xml:space="preserve">
+    <value>Glasses on</value>
+  </data>
+  <data name="GlassesOff" xml:space="preserve">
+    <value>Glasses off</value>
+  </data>
+  <data name="Iris" xml:space="preserve">
+    <value>Iris</value>
+  </data>
+  <data name="CarryingGlasses" xml:space="preserve">
+    <value>Carrying glasses</value>
+  </data>
+  <data name="NotCarryingGlasses" xml:space="preserve">
+    <value>Not carrying glasses</value>
+  </data>
+  <data name="RejectThisImage" xml:space="preserve">
+    <value>Reject this image</value>
+  </data>
+  <data name="ImageIsCorrupt" xml:space="preserve">
+    <value>Image is corrupt or garbled</value>
+  </data>
+  <data name="Tries" xml:space="preserve">
+    <value>Tries</value>
+  </data>
+  <data name="TheSystemShouldIgnoreThisConflict" xml:space="preserve">
+    <value>The system should ignore this conflict</value>
+  </data>
+  <data name="ThisAttemptHasNoConflict" xml:space="preserve">
+    <value>This attempt has no conflict</value>
+  </data>
+  <data name="CurrentConditions" xml:space="preserve">
+    <value>Current conditions</value>
+  </data>
+  <data name="ConditionsOnCapture" xml:space="preserve">
+    <value>Conditions on capture</value>
+  </data>
+  <data name="AnticipatedConditions" xml:space="preserve">
+    <value>Anticipated conditions</value>
+  </data>
+  <data name="SpecialConditions" xml:space="preserve">
+    <value>Special Conditions</value>
+  </data>
+  <data name="SubjectMustNotBeCarryingGlasses" xml:space="preserve">
+    <value>Subject must not be carrying glasses</value>
+  </data>
+  <data name="SubjectMustBeCarryingGlasses" xml:space="preserve">
+    <value>Subject must be carrying glasses</value>
+  </data>
+  <data name="SubjectMustNotBeWearingGlasses" xml:space="preserve">
+    <value>Subject must not be wearing glasses</value>
+  </data>
+  <data name="SubjectMustBeWearingGlasses" xml:space="preserve">
+    <value>Subject must be wearing glasses</value>
+  </data>
+  <data name="SpecialConditionsCaptured" xml:space="preserve">
+    <value>Special Conditions (captured)</value>
+  </data>
+  <data name="SpecialConditionsNow" xml:space="preserve">
+    <value>Special Conditions (now)</value>
+  </data>
+  <data name="InaccessiblePartsCaptured" xml:space="preserve">
+    <value>Inaccessible Parts (captured)</value>
+  </data>
+  <data name="InaccessiblePartsNow" xml:space="preserve">
+    <value>Inaccessible Parts (now)</value>
+  </data>
+  <data name="CapturedPartsNowMissing" xml:space="preserve">
+    <value>Captured parts now missing</value>
+  </data>
+  <data name="MissingPartsRecovered" xml:space="preserve">
+    <value>Missing parts recovered</value>
+  </data>
+  <data name="Session" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="CheckingStatusOfSensorsDotDotDot" xml:space="preserve">
+    <value>Checking status of sensors...</value>
+  </data>
+  <data name="StartingSensorInitializationDotDotDot" xml:space="preserve">
+    <value>Starting sensor initialization...</value>
+  </data>
+  <data name="WaitingForSensorsToInitializeDotDotDot" xml:space="preserve">
+    <value>Waiting for sensors to initialize...</value>
+  </data>
+  <data name="WaitingForCaptureToBeginDotDotDot" xml:space="preserve">
+    <value>Waiting for capture to begin...</value>
+  </data>
+  <data name="CapturingBiometricDataDotDotDot" xml:space="preserve">
+    <value>Capturing biometric data...</value>
+  </data>
+  <data name="TaskToSkip" xml:space="preserve">
+    <value>Task to Skip</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="[To]" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="DeterminingNextTaskDotDotDot" xml:space="preserve">
+    <value>Determining next task...</value>
+  </data>
+  <data name="LoadingApplicationDotDotDot" xml:space="preserve">
+    <value>Loading application...</value>
+  </data>
+  <data name="FinishingSensorInitializationDotDotDot" xml:space="preserve">
+    <value>Finishing sensor initialization...</value>
+  </data>
+  <data name="Sensors" xml:space="preserve">
+    <value>Sensors</value>
+  </data>
+  <data name="Convenience" xml:space="preserve">
+    <value>Convenience</value>
+  </data>
+  <data name="Conflict" xml:space="preserve">
+    <value>Conflict</value>
+  </data>
+  <data name="CaptureFailure" xml:space="preserve">
+    <value>Capture Failure</value>
+  </data>
+  <data name="Corrupt" xml:space="preserve">
+    <value>Corrupt</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="MoveBack" xml:space="preserve">
+    <value>Move back</value>
+  </data>
+  <data name="MoveForward" xml:space="preserve">
+    <value>Move forward</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="OutOfRange" xml:space="preserve">
+    <value>Out of Range</value>
+  </data>
+  <data name="PollingDotDotDot" xml:space="preserve">
+    <value>Polling...</value>
+  </data>
+  <data name="DownloadingThumbnailsDotDotDot" xml:space="preserve">
+    <value>Downloading Thumbnails...</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="Timeout" xml:space="preserve">
+    <value>Timeout</value>
+  </data>
+  <data name="ClickToJumpToTaskN" xml:space="preserve">
+    <value>Click to jump to task {0}</value>
+    <comment>taskIndex; Integer</comment>
+  </data>
+  <data name="AttemptNFailed" xml:space="preserve">
+    <value>Attempt {0}: Failed</value>
+    <comment>attemptNumber; Integer</comment>
+  </data>
+  <data name="AttemptNRejected" xml:space="preserve">
+    <value>Attempt {0}: Rejected</value>
+    <comment>attemptNumber; Integer</comment>
+  </data>
+  <data name="AttemptNSuccessfulButNotYetDownloaded" xml:space="preserve">
+    <value>Attempt {0}: Successful, but not yet fully downloaded</value>
+    <comment>attemptNumber; Integer</comment>
+  </data>
+  <data name="AttemptNSuccessfulAndDownloaded" xml:space="preserve">
+    <value>Attempt {0}: Successful and fully downloaded</value>
+    <comment>attemptNumber; Integer</comment>
+  </data>
+  <data name="YouAreCurrentlyViewingTheImagesForThisTask" xml:space="preserve">
+    <value>You are currently viewing the images for this task</value>
+  </data>
+  <data name="SessionEndWithConflict" xml:space="preserve">
+    <value>Session about to end with outstanding conflicts. Do you want to continue?</value>
+  </data>
+  <data name="GeneralConfigurationFailureException" xml:space="preserve">
+    <value>Configuration failure</value>
+  </data>
+  <data name="GeneralConfigurationTimeoutException" xml:space="preserve">
+    <value>Configuration timed out</value>
+  </data>
+  <data name="GeneralBadSensorStatusException" xml:space="preserve">
+    <value>Cannot perform operation on sensor in current state</value>
+  </data>
+  <data name="SpecificBadSensorStatusException" xml:space="preserve">
+    <value>Cannot {0} sensor in "{1}" state</value>
+    <comment>operation, state; String, SensorStatus</comment>
+  </data>
+  <data name="GeneralDownloadFailureException" xml:space="preserve">
+    <value>Download failure</value>
+  </data>
+  <data name="GeneralDownloadTimeoutException" xml:space="preserve">
+    <value>Download timeout</value>
+  </data>
+  <data name="GeneralInitializationFailureException" xml:space="preserve">
+    <value>Initialization failure</value>
+  </data>
+  <data name="GeneralInitializationTimeoutException" xml:space="preserve">
+    <value>Initialization timeout</value>
+  </data>
+  <data name="GeneralSensorException" xml:space="preserve">
+    <value>General sensor failure</value>
+  </data>
+  <data name="InitializationTimedOut" xml:space="preserve">
+    <value>Initialization timed out</value>
+  </data>
+  <data name="RecoveringFromSensorFailuresDotDotDot" xml:space="preserve">
+    <value>Recovering from sensor failures...</value>
+  </data>
+  <data name="InitializationFailed" xml:space="preserve">
+    <value>Initialization failed</value>
+  </data>
+  <data name="AwaitingRecoveryResultDotDotDot" xml:space="preserve">
+    <value>Waiting for result of sensor recovery request...</value>
+  </data>
+  <data name="HandlingRecoveryResultDotDotDot" xml:space="preserve">
+    <value>Determining how to recover from sensor failure...</value>
+  </data>
+  <data name="AwaitingStartOfNewTaskSetDotDotDot" xml:space="preserve">
+    <value>Waiting for signal to start new set of tasks...</value>
+  </data>
+  <data name="StartingNewTaskSetDotDotDot" xml:space="preserve">
+    <value>Starting a new set of tasks...</value>
+  </data>
+  <data name="NothingToDoSinceThereAreNoTasksToPerform" xml:space="preserve">
+    <value>There is nothing to do since there are no tasks that can be performed</value>
+  </data>
+  <data name="LeftThumb" xml:space="preserve">
+    <value>Left thumb</value>
+  </data>
+  <data name="LeftIndexFinger" xml:space="preserve">
+    <value>Left index finger</value>
+  </data>
+  <data name="LeftMiddleFinger" xml:space="preserve">
+    <value>Left middle finger</value>
+  </data>
+  <data name="LeftRingFinger" xml:space="preserve">
+    <value>Left ring finger</value>
+  </data>
+  <data name="LeftLittleFinger" xml:space="preserve">
+    <value>Left little finger</value>
+  </data>
+  <data name="RightThumb" xml:space="preserve">
+    <value>Right thumb</value>
+  </data>
+  <data name="RightIndexFinger" xml:space="preserve">
+    <value>Right index finger</value>
+  </data>
+  <data name="RightMiddleFinger" xml:space="preserve">
+    <value>Right middle finger</value>
+  </data>
+  <data name="RightRingFinger" xml:space="preserve">
+    <value>Right ring finger</value>
+  </data>
+  <data name="RightLittleFinger" xml:space="preserve">
+    <value>Right little finger</value>
+  </data>
+  <data name="LeftIris" xml:space="preserve">
+    <value>Left iris</value>
+  </data>
+  <data name="WaitingForAValidReasonToSkipThisTaskDotDotDot" xml:space="preserve">
+    <value>Waiting for a valid reason to skip this task...</value>
+  </data>
+  <data name="HandlingTaskSkipJustificationDotDotDot" xml:space="preserve">
+    <value>Determining how to respond to request for skipping task...</value>
+  </data>
+  <data name="HandlingCaptureResultDotDotDot" xml:space="preserve">
+    <value>Determining what to do with capture result...</value>
+  </data>
+  <data name="EditingAttemptDotDotDot" xml:space="preserve">
+    <value>Waiting for results of attempt edit...</value>
+  </data>
+  <data name="HandlingAttemptEditDotDotDot" xml:space="preserve">
+    <value>Determining how to handle attempt edits...</value>
+  </data>
+  <data name="ReviewingCaptureResultDotDotDot" xml:space="preserve">
+    <value>Waiting for results of capture review...</value>
+  </data>
+  <data name="HandlingReviewCaptureResultDotDotDot" xml:space="preserve">
+    <value>Determining how to handle capture result...</value>
+  </data>
+  <data name="CancellingOrResumingDownloadDotDotDot" xml:space="preserve">
+    <value>Cancelling/resuming download...</value>
+  </data>
+  <data name="FinalizingSensorResultDotDotDot" xml:space="preserve">
+    <value>Finalizing sensor output...</value>
+  </data>
+  <data name="GeneratingTemplateDotDotDot" xml:space="preserve">
+    <value>Generating template(s)...</value>
+  </data>
+  <data name="OperatorExplainingTimeoutDotDotDot" xml:space="preserve">
+    <value>Waiting for explanation of timeout...</value>
+  </data>
+  <data name="TallyingFailedAttemptDotDotDot" xml:space="preserve">
+    <value>Tallying failed attempt...</value>
+  </data>
+  <data name="NErrors" xml:space="preserve">
+    <value>{0} error(s)</value>
+    <comment>count; Integer</comment>
+  </data>
+  <data name="ConfiguringSensorDotDotDot" xml:space="preserve">
+    <value>Configuring current sensor...</value>
+  </data>
+  <data name="AwaitingConfigurationResultDotDotDot" xml:space="preserve">
+    <value>Waiting for sensor configuration to complete...</value>
+  </data>
+  <data name="HandlingConfigurationResultDotDotDot" xml:space="preserve">
+    <value>Finishing sensor configuration...</value>
+  </data>
+  <data name="AwaitingTaskSetCompletionDotDotDot" xml:space="preserve">
+    <value>Waiting for completion of all tasks...</value>
+  </data>
+  <data name="CheckingOutstandingConflictsDotDotDot" xml:space="preserve">
+    <value>Checking for outstanding conflcits...</value>
+  </data>
+  <data name="CompletingTaskSetDotDotDot" xml:space="preserve">
+    <value>Completing all tasks...</value>
+  </data>
+  <data name="Polling" xml:space="preserve">
+    <value>Polling</value>
+  </data>
+  <data name="TaskChangedFromT1ToT2" xml:space="preserve">
+    <value>Task changed from {0} to {1}.</value>
+    <comment>descriptionOfFromTask, descriptionOfToTask</comment>
+  </data>
+  <data name="RtfTaskChangedFromT1ToT2" xml:space="preserve">
+    <value>Task changed from \b1{0}\b0  to \b1{1}\b0.</value>
+    <comment>descriptionOfFromTask, descriptionOfToTask</comment>
+  </data>
+  <data name="PleaseRemoveHand" xml:space="preserve">
+    <value>Please Remove Hand</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>Not started</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Downloading</value>
+  </data>
+  <data name="Blocked" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Skipped" xml:space="preserve">
+    <value>Skipped</value>
+  </data>
+  <data name="Suspended" xml:space="preserve">
+    <value>Suspended</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="AttemptEditor" xml:space="preserve">
+    <value>Attempt Editor</value>
+  </data>
+  <data name="CaptureCanceled" xml:space="preserve">
+    <value>CaptureCanceled</value>
+  </data>
+  <data name="PrematureLift" xml:space="preserve">
+    <value>Hand lifted too soon</value>
+  </data>
+  <data name="GeneralBadDefinitionException" xml:space="preserve">
+    <value>Bad definition</value>
+  </data>
+  <data name="Face" xml:space="preserve">
+    <value>Face</value>
+  </data>
+  <data name="RightIris" xml:space="preserve">
+    <value>Right iris</value>
+  </data>
+  <data name="BothIrises" xml:space="preserve">
+    <value>Both irises</value>
+  </data>
+  <data name="LeftSlap" xml:space="preserve">
+    <value>Left slap</value>
+  </data>
+  <data name="RightSlap" xml:space="preserve">
+    <value>Right slap</value>
+  </data>
+  <data name="ThumbsSlap" xml:space="preserve">
+    <value>Thumbs slap</value>
+  </data>
+  <data name="FlatLeftThumb" xml:space="preserve">
+    <value>Left thumb (flat)</value>
+  </data>
+  <data name="FlatLeftIndex" xml:space="preserve">
+    <value>Left index (flat)</value>
+  </data>
+  <data name="FlatLeftMiddle" xml:space="preserve">
+    <value>Left middle (flat)</value>
+  </data>
+  <data name="FlatLeftRing" xml:space="preserve">
+    <value>Left ring (flat)</value>
+  </data>
+  <data name="FlatLeftLittle" xml:space="preserve">
+    <value>Left little (flat)</value>
+  </data>
+  <data name="FlatRightThumb" xml:space="preserve">
+    <value>Right thumb (flat)</value>
+  </data>
+  <data name="FlatRightIndex" xml:space="preserve">
+    <value>Right index (flat)</value>
+  </data>
+  <data name="FlatRightMiddle" xml:space="preserve">
+    <value>Right middle (flat)</value>
+  </data>
+  <data name="FlatRightRing" xml:space="preserve">
+    <value>Right ring (flat)</value>
+  </data>
+  <data name="FlatRightLittle" xml:space="preserve">
+    <value>Right little (flat)</value>
+  </data>
+  <data name="RolledLeftThumb" xml:space="preserve">
+    <value>Left thumb (rolled)</value>
+  </data>
+  <data name="RolledLeftIndex" xml:space="preserve">
+    <value>Left index (rolled)</value>
+  </data>
+  <data name="RolledLeftMiddle" xml:space="preserve">
+    <value>Left middle (rolled)</value>
+  </data>
+  <data name="RolledLeftRing" xml:space="preserve">
+    <value>Left ring (rolled)</value>
+  </data>
+  <data name="RolledLeftLittle" xml:space="preserve">
+    <value>Left little (rolled)</value>
+  </data>
+  <data name="RolledRightThumb" xml:space="preserve">
+    <value>Right thumb (rolled)</value>
+  </data>
+  <data name="RolledRightIndex" xml:space="preserve">
+    <value>Right index (rolled)</value>
+  </data>
+  <data name="RolledRightMiddle" xml:space="preserve">
+    <value>Right middle (rolled)</value>
+  </data>
+  <data name="RolledRightRing" xml:space="preserve">
+    <value>Right ring (rolled)</value>
+  </data>
+  <data name="RolledRightLittle" xml:space="preserve">
+    <value>Right little (rolled)</value>
+  </data>
+  <data name="LeftPalm" xml:space="preserve">
+    <value>Left palm</value>
+  </data>
+  <data name="RightPalm" xml:space="preserve">
+    <value>Right palm</value>
+  </data>
+  <data name="GeneralUnfinishedBodyPartsUpdateException" xml:space="preserve">
+    <value>BodyPartCollection.BeginUpdate() called without a BodyPartCollection.EndUpdate().</value>
+  </data>
+  <data name="Failure" xml:space="preserve">
+    <value>Failure</value>
+  </data>
+  <data name="Conflicts" xml:space="preserve">
+    <value>Conflicts</value>
+  </data>
+  <data name="PercentageOfAllTasksThatAreFullyCompleted" xml:space="preserve">
+    <value>Percentage of all tasks that are fully completed</value>
+  </data>
+  <data name="DefaultSessionMenuText" xml:space="preserve">
+    <value>&amp;Default session...</value>
+  </data>
+  <data name="ShuttingDownDotDotDot" xml:space="preserve">
+    <value>Shutting down...</value>
+  </data>
+  <data name="DownloadFailure" xml:space="preserve">
+    <value>Download failure</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Download failed</value>
+  </data>
+  <data name="AwaitingDownload" xml:space="preserve">
+    <value>Awaiting download</value>
+  </data>
+  <data name="DownloadComplete" xml:space="preserve">
+    <value>Download complete</value>
+  </data>
+  <data name="EndOfSession" xml:space="preserve">
+    <value>End of session</value>
+  </data>
+  <data name="Corrected" xml:space="preserve">
+    <value>Corrected</value>
+  </data>
+  <data name="ClickToViewCapturedImagesForTaskN" xml:space="preserve">
+    <value>Click to view captured images for task {0}</value>
+    <comment>taskNumber; Integer</comment>
+  </data>
+  <data name="WrongTask" xml:space="preserve">
+    <value>Wrong task</value>
+  </data>
+  <data name="Virtual" xml:space="preserve">
+    <value>Virtual</value>
+  </data>
+  <data name="Face3D" xml:space="preserve">
+    <value>3D-Face</value>
+  </data>
+  <data name="Fingerprint" xml:space="preserve">
+    <value>Fingerprint</value>
+  </data>
+  <data name="Gait" xml:space="preserve">
+    <value>Gait</value>
+  </data>
+  <data name="HandGeometry" xml:space="preserve">
+    <value>Hand geometry</value>
+  </data>
+  <data name="Voice" xml:space="preserve">
+    <value>Voice</value>
+  </data>
+  <data name="EditAttempt" xml:space="preserve">
+    <value>Edit attempt</value>
+  </data>
+  <data name="AnticipatedSpecialConditionsDuringCapture" xml:space="preserve">
+    <value>Anticipated special conditions (during capture)</value>
+  </data>
+  <data name="AnticipatedInjuriesDuringCapture" xml:space="preserve">
+    <value>Anticipated injuries (during capture)</value>
+  </data>
+  <data name="TaskAlreadyCompletedSuccessfully" xml:space="preserve">
+    <value>Task already completed successfully</value>
+  </data>
+  <data name="Injuries" xml:space="preserve">
+    <value>Injuries</value>
+  </data>
+  <data name="EndSessionButtonText" xml:space="preserve">
+    <value>End Session</value>
+  </data>
+  <data name="RestartSessionButtonText" xml:space="preserve">
+    <value>Restart Session</value>
+  </data>
+  <data name="YouCantChangeThatConditionJustNow" xml:space="preserve">
+    <value>Sorry, you can't change that condition just now.</value>
+  </data>
+  <data name="SorryBang" xml:space="preserve">
+    <value>Sorry!</value>
+  </data>
+  <data name="UnnecessaryExtraTask" xml:space="preserve">
+    <value>Unnecessary extra task</value>
+  </data>
+  <data name="PleaseAcceptRejectThisDataRtf" xml:space="preserve">
+    <value>\tab Please \b1Accept\b0  or \b1Reject \b0 this data.</value>
+  </data>
+  <data name="PleaseAcceptRejectThisData" xml:space="preserve">
+    <value>Please accept or reject this data."</value>
+  </data>
+  <data name="ThisSessionHasDataNotYetDownloaded" xml:space="preserve">
+    <value>This session has data that has not yet been downloaded.</value>
+  </data>
+  <data name="DoYouWishToExit" xml:space="preserve">
+    <value>Do you wish to exit?</value>
+  </data>
+  <data name="LeftHand" xml:space="preserve">
+    <value>Left hand</value>
+  </data>
+  <data name="RightHand" xml:space="preserve">
+    <value>Right hand</value>
+  </data>
+  <data name="ConflictWillBeAutomaticallyFixed" xml:space="preserve">
+    <value>Conflict will be automatically fixed</value>
+  </data>
+  <data name="ConflictMustBeIgnored" xml:space="preserve">
+    <value>Conflict must be ignored</value>
+  </data>
+  <data name="SkipTask" xml:space="preserve">
+    <value>Skip task</value>
+  </data>
+  <data name="SensorRecoveryInstructions" xml:space="preserve">
+    <value>There was a problem with a sensor. You may try to recover from the sensor error, or give up, disabling the sensor.</value>
+  </data>
+  <data name="SensorRecoveryFormTitle" xml:space="preserve">
+    <value>Recover from Sensor Error</value>
+  </data>
+  <data name="WaitingForDownloadsToFinishDotDotDot" xml:space="preserve">
+    <value>Waiting for downloads to finish...</value>
+  </data>
+  <data name="CapturedConditions" xml:space="preserve">
+    <value>Captured conditions</value>
+  </data>
+  <data name="CurrentInjuries" xml:space="preserve">
+    <value>Current injuries</value>
+  </data>
+  <data name="CapturedInjuries" xml:space="preserve">
+    <value>Captured injuries</value>
+  </data>
+  <data name="Tab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="ShiftPlusTab" xml:space="preserve">
+    <value>Shift+Tab</value>
+  </data>
+  <data name="CapturedImages" xml:space="preserve">
+    <value>Captured images</value>
+  </data>
+  <data name="GeneralMissingConditionFactoryException" xml:space="preserve">
+    <value>Condition not found.</value>
+  </data>
+  <data name="CannotOpenSensorForRecording" xml:space="preserve">
+    <value>Cannot open sensor for recording</value>
+  </data>
+  <data name="ProblemWhileConfiguringSensorDuringCapture" xml:space="preserve">
+    <value>Problem while configuring sensor during capture</value>
+  </data>
+  <data name="TheScannerPlatenIsDirty" xml:space="preserve">
+    <value>The Scanner Platen Is Dirty.</value>
+  </data>
+  <data name="ThisSessionHasNotYetSaveInDatabase" xml:space="preserve">
+    <value>This session has data that has not yet been save in the database.</value>
+  </data>
+  <data name="Olympus" xml:space="preserve">
+    <value>Olympus</value>
+  </data>
+  <data name="OlympusCamera" xml:space="preserve">
+    <value>Olympus Camera</value>
+  </data>
+  <data name="CaptureFailureBadImageQuality" xml:space="preserve">
+    <value>Capture failure: bad image quality.</value>
+  </data>
+  <data name="CaptureTimedout" xml:space="preserve">
+    <value>Capture timed out.</value>
+  </data>
+  <data name="ConfigurationTimedOut" xml:space="preserve">
+    <value>Configuration timed out.</value>
+  </data>
+  <data name="ChangeCurrentAndCapturedDataTogether" xml:space="preserve">
+    <value>Change 'current' and 'captured' data together</value>
+  </data>
+</root>

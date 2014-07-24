@@ -1,0 +1,298 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8482B120-5D8A-47B3-A704-FF71FBCDB6F0}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Mbark.Infrastructure</AssemblyName>
+    <AssemblyOriginatorKeyFile>MBARK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Mbark.Infrastructure.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Mbark.Infrastructure.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>none</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Grid.Windows, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="AsyncCommandManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoFont.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutomateTestLog.vb" />
+    <Compile Include="AutoSize.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AutosizableDropDownGroup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AutosizableDropDownLayoutParams.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\AutosizableRichTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RadioGroupBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SmoothPictureBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Countries.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Debug.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions.autogen.vb" />
+    <Compile Include="ExifConstant.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExifReader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="GlobalUISettings.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IAutoSizable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IHasTabList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IHasUICultureInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalizableString.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages\CountryMessages.autogen.vb" />
+    <Compile Include="Messages\InfrastructureMessages.autogen.vb" />
+    <Compile Include="NamedProxy.vb" />
+    <Compile Include="SafeControlInvoke.vb" />
+    <Compile Include="SafeControlInvokeWrappers.vb" />
+    <Compile Include="TestingSupport.vb" />
+    <Compile Include="Rtf.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatefulForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatefulFormInterfaces.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringUtilities.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeUtilities.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIUtilities.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AutosizableDropDownGroup.resx">
+      <DependentUpon>AutosizableDropDownGroup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AutosizableRichTextBox.resx">
+      <DependentUpon>AutosizableRichTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RadioGroupBox.resx">
+      <DependentUpon>RadioGroupBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SmoothPictureBox.resx">
+      <DependentUpon>SmoothPictureBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\XBox.resx">
+      <DependentUpon>XBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.close.16.disabled.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.close.16.hot.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.close.16.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.close.disabled.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.close.hot.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.close.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.diskette.16.disabled.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.diskette.16.hot.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.diskette.16.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.diskette.disabled.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.diskette.hot.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.diskette.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.edit.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.group_zoom.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.open_save.16.disabled.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.open_save.16.hot.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.open_save.16.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.open_save.disabled.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.open_save.hot.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.UI.open_save.ico" />
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Messages\countries-en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatefulForm.resx">
+      <DependentUpon>StatefulForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Embedded Images\log.ico" />
+    <Content Include="Embedded Images\log_add.ico" />
+    <Content Include="Embedded Images\log_back.ico" />
+    <Content Include="Embedded Images\log_cancel.ico" />
+    <Content Include="Embedded Images\log_clock.ico" />
+    <Content Include="Embedded Images\log_close.ico" />
+    <Content Include="Embedded Images\log_config.ico" />
+    <Content Include="Embedded Images\log_down.ico" />
+    <Content Include="Embedded Images\log_fav.ico" />
+    <Content Include="Embedded Images\log_help.ico" />
+    <Content Include="Embedded Images\log_info.ico" />
+    <Content Include="Embedded Images\log_level.ico" />
+    <Content Include="Embedded Images\log_lock.ico" />
+    <Content Include="Embedded Images\log_next.ico" />
+    <Content Include="Embedded Images\log_ok.ico" />
+    <Content Include="Embedded Images\log_remove.ico" />
+    <Content Include="Embedded Images\log_save.ico" />
+    <Content Include="Embedded Images\log_search.ico" />
+    <Content Include="Embedded Images\log_unlock.ico" />
+    <Content Include="Embedded Images\log_up.ico" />
+    <Content Include="Embedded Images\log_write.ico" />
+    <Content Include="Embedded Images\log_zoom.ico" />
+    <None Include="AsyncCommandClasses.cd" />
+    <None Include="Exceptions.autogen.csp" />
+    <None Include="MBARK.snk" />
+    <None Include="Messages\CountryMessages.autogen.csp" />
+    <None Include="Messages\InfrastructureMessages.autogen.csp" />
+    <None Include="Notes.txt" />
+    <None Include="SafeControlInvoke.csp" />
+    <None Include="SafeControlInvokeWrappers.csp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

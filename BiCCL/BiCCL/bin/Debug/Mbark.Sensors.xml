@@ -1,0 +1,564 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mbark.Sensors
+</name>
+</assembly>
+<members>
+<member name="M:Mbark.UI.SafeProgressBarAdvValueGetterAndSetter.SafeSetProgressBarAdvValue(Syncfusion.Windows.Forms.Tools.ProgressBarAdv,System.Int32)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a ProgressBarAdv.ProgressBarAdv property.
+ </summary>
+	<param name="control">Object to have its Value set</param>
+	<param name="value">Value assigned to target object's Value property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeProgressBarAdvValueGetterAndSetter.SafeGetProgressBarAdvValue(Syncfusion.Windows.Forms.Tools.ProgressBarAdv)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a ProgressBarAdv.ProgressBarAdv property.
+ </summary>
+	<param name="control">Object from which to retrieve Value value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeGradientLabelTextGetterAndSetter.SafeSetGradientLabelText(Syncfusion.Windows.Forms.Tools.GradientLabel,System.String)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a GradientLabel.GradientLabel property.
+ </summary>
+	<param name="control">Object to have its Text set</param>
+	<param name="value">Value assigned to target object's Text property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeGradientLabelTextGetterAndSetter.SafeGetGradientLabelText(Syncfusion.Windows.Forms.Tools.GradientLabel)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a GradientLabel.GradientLabel property.
+ </summary>
+	<param name="control">Object from which to retrieve Text value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeGradientLabelVisibleGetterAndSetter.SafeSetGradientLabelVisible(Syncfusion.Windows.Forms.Tools.GradientLabel,System.Boolean)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a GradientLabel.GradientLabel property.
+ </summary>
+	<param name="control">Object to have its Visible set</param>
+	<param name="value">Value assigned to target object's Visible property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeGradientLabelVisibleGetterAndSetter.SafeGetGradientLabelVisible(Syncfusion.Windows.Forms.Tools.GradientLabel)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a GradientLabel.GradientLabel property.
+ </summary>
+	<param name="control">Object from which to retrieve Visible value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafePictureBoxVisibleGetterAndSetter.SafeSetPictureBoxVisible(System.Windows.Forms.PictureBox,System.Boolean)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a PictureBox.PictureBox property.
+ </summary>
+	<param name="control">Object to have its Visible set</param>
+	<param name="value">Value assigned to target object's Visible property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafePictureBoxVisibleGetterAndSetter.SafeGetPictureBoxVisible(System.Windows.Forms.PictureBox)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a PictureBox.PictureBox property.
+ </summary>
+	<param name="control">Object from which to retrieve Visible value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeProgressBarValueGetterAndSetter.SafeSetProgressBarValue(System.Windows.Forms.ProgressBar,System.Int32)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a ProgressBar.ProgressBar property.
+ </summary>
+	<param name="control">Object to have its Value set</param>
+	<param name="value">Value assigned to target object's Value property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeProgressBarValueGetterAndSetter.SafeGetProgressBarValue(System.Windows.Forms.ProgressBar)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a ProgressBar.ProgressBar property.
+ </summary>
+	<param name="control">Object from which to retrieve Value value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="F:Mbark.Sensors.BaseSensor.mUICulture">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.Modality">
+	<summary>Define sensor modality: finger, face or iris.</summary>
+	<value>
+		<para>SensorModality.Finger</para>
+		<para>SensorModality.Face</para>
+		<para>SensorModality.Iris</para>
+	</value>
+	<remarks>
+		<strong>This propery must be override in the derive class.</strong> Must define
+ the modality of the sensor. If sensor modality is define in the code, the property must
+ include in the configuration file.
+ </remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.FriendlyName">
+	<summary>Gets or sets the name of the control.</summary>
+	<returns>String</returns>
+	<remarks>
+		<strong>This property must be override in the derive class.</strong> The
+ <b>FriendlyName</b> property can be used to identify the sensors in the sensor
+ controller application.
+ </remarks>
+	<value>The name of sensor name in <strong>string</strong> value.</value>
+</member><member name="P:Mbark.Sensors.BaseSensor.CapturesImmediately">
+	<summary>
+ Get a boolean value indicating whehter capture image immediately after capture
+ button is pressed.
+ </summary>
+	<remarks>
+		<strong>This propery must be override in the derive class.</strong> The
+ <strong>CapturesImmediately</strong> property can determine the capture mode of the
+ sensor. If <strong>true</strong> capture process immediately to collect the image. If
+ <strong>false</strong>, capture doesn't collect data immediately, instead data can be
+ presented and collected during the allowed capture time.
+ </remarks>
+	<value>
+		<strong>true</strong> if the sensor capture image immediately after capture
+ button is clicked, otherwise <strong>false</strong>. The default is
+ <strong>false</strong>
+	</value>
+	<seealso cref="P:Mbark.Sensors.BaseSensor.IsTimeout" cat="Other Property">IsTimeout Property</seealso>
+</member><member name="P:Mbark.Sensors.BaseSensor.AsControl">
+	<summary>
+ Get sensor as form control.
+ </summary>
+	<value>Forms.Control</value>
+	<returns>Forms.Control</returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.SensorId">
+	<summary>
+ Get globally unique identifier of the sensor.
+ </summary>
+	<value>GUI</value>
+</member><member name="P:Mbark.Sensors.BaseSensor.RequiresReview">
+	<summary>
+ Get a boolean value indicating whether the sensor require to preview captured image.
+ </summary>
+	<value>
+		<strong>true</strong> if the sensor require to preview the captured image,
+ otherwise <strong>false</strong>. The default is <strong>false</strong>
+	</value>
+	<remarks>
+ This property can be used to determine whether the sensor is require to preview
+ image after capture. If <strong>true</strong>, a preview box appear after a successful
+ capture, and user must choose whether to accept the image. Otherwise is
+ <strong>false</strong>, if capture successfully, the captured image automically get
+ accepted.
+ </remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableRequiresReview">
+	<summary>
+ Set a boolean value indicating whether the sensor require to preview captured image.
+ </summary>
+	<value>Boolean</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.RequiresDownload">
+	<summary>
+ Get a boolean value indicating whether the sensor require to preview captured image.
+ </summary>
+	<value>
+		<strong>true</strong> if the sensor require to preview the captured image,
+ otherwise <strong>false</strong>. The default is <strong>false</strong>
+	</value>
+	<remarks>
+ This property can be used to determine whether the sensor is require to preview
+ image after capture. If <strong>true</strong>, a preview box appear after a successful
+ capture, and user must choose whether to accept the image. Otherwise is
+ <strong>false</strong>, if capture successfully, the captured image automically get
+ accepted.
+ </remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableRequiresDownload">
+	<summary>
+ Set a boolean value indicating whether the sensor require to preview captured image.
+ </summary>
+	<value>Boolean</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.CaptureIsCancelable">
+	<summary>
+ Get a boolean value indicating whether sensor allow to cancel capture .
+ </summary>
+	<value>
+		<strong>true</strong> if cancel is allow during capture, otherwise
+ <strong>false</strong>. The default is <strong>true</strong>.
+ </value>
+	<remarks>
+		<strong>CaptureIsCancelable</strong> is true only when
+ <strong>CapturesImmediately</strong> is to true.
+ </remarks>
+	<seealso cref="P:Mbark.Sensors.BaseSensor.CapturesImmediately" cat="Other Property">CapturesImmediately Property</seealso>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableCaptureIsCancelable">
+	<summary>
+ Set a boolean value indicating whether sensor allow to cancel capture .
+ </summary>
+	<value>Boolean</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.HasLivePreview">
+	<summary>
+ Get a boolean value indicating whether sensor has live preview prior capture.
+ </summary>
+	<value>
+		<strong>true</strong> if the sensor provides live preview before capture,
+ otherwise <strong>false</strong>. The default is <strong>false</strong>.
+ </value>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableHasLivePreview">
+	<summary>
+ Set a boolean value indicating whether sensor has live preview prior capture.
+ </summary>
+	<value>Boolean</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.PercentDownloadedIsMeaningful">
+	<summary>
+ Get a boolean value indicating whether to display the download process bar while downloading or not.
+ </summary>
+	<value><strong>true</strong> if</value>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritablePercentDownloadedIsMeaningful">
+	<summary>
+ Set a boolean value indicating whether to display the download process bar while downloading or not.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.HasConfigurationClass">
+	<summary>
+ Get a boolean value indicating whether the sensor has a configuration class
+ </summary>
+	<value>
+		<strong>true</strong> if the sensor has a configuration class, otherwise
+ <strong>false</strong>. The default is <strong>false</strong>.
+ </value>
+	<returns>Boolean</returns>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableHasConfigurationClass">
+	<summary>
+ Set a boolean value indicating whether the sensor has a configuration class.
+ </summary>
+	<value>Boolean</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.ConfigurationClassName">
+	<summary>
+ Get the name of the sensor configuration class.
+ </summary>
+	<value>The name of the sensor configuration class.</value>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableConfigurationClassName">
+	<summary>
+ Set the name of the sensor configuration class.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.TypeName">
+	<summary>
+ Get the Type of the current instance.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.LatestStatus">
+	<summary>
+ Get the lastes sensor status.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.Disabled">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.TargetParts">
+	<summary>
+ Body part collection contains set of body part that will require for next capture.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.InaccessibleParts">
+	<summary>
+ Body part collection contains set of body part that will not available for next capture.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.TargetCategory">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.PercentDownloaded">
+	<summary>
+ Get the current percentage of completed download.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritablePercentDownloaded">
+	<summary>
+ Set the percentage of how much download has completed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.LatestThumbnail">
+	<summary>
+ Get the Thumbnail image of the latest capture.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableLatestThumbnail">
+	<summary>
+ Set the Thumbnail image from the latest capture.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Mbark.Sensors.BaseSensor.mLastReviewImageAcceptable">
+	<summary>
+ Get or Set a boolean value indicating whether the capture result is acceptable after a successful capture.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.IsOfflineOrUninitialized">
+	<summary>
+ Check if the status of sensor is offline or uninitialized
+ True if it is offline or uninitialized, else False.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mbark.Sensors.BaseSensor.RefreshControls">
+	<summary>
+ Forces the sensor control to redraw itself and child controls.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.NearestForm">
+	<summary>
+	</summary>
+</member><member name="P:Mbark.Sensors.BaseSensor.CaptureCommandTemplate">
+	<remarks><strong>This property must be override in the derive class.</strong></remarks>
+	<example>
+    The following code example show the implementation of
+    <strong>CaptureCommandTemplate</strong> in the derive class. The example declares a
+    Protected Delegate and a Private AsyncCommandTemplate member for the capture
+    function. Call the AsyncCommandTemplate constructor to create a new template
+    command, next... and provide the command a <strong>ExpirationTime.</strong>
+		<code lang="VB">
+ Private mCaptureCommandTemplate As AsyncCommandTemplate
+ Protected Delegate Function CaptureMethod() As CaptureResultCollection
+ Public Overrides Readonly Property CaptureCommandTemplate() As Threading.AsyncCommandTemplate
+ Get
+     If mCaptureCommandTemplate Is Nothing Then
+         mCaptureCommandTemplate = New AsyncCommandTemplate
+         With mCaptureCommandTemplate
+             .TargetMethod = CreateDelegate(GetType(CaptureMethod), Me, "CaptureImage")
+             .ExpirationTime = CaptureCommandExpirationTime
+             .IgnoreUnderlyingHandleOfTargetControl = True
+         End With
+     End If
+     Return mCaptureCommandTemplate
+ End Get
+ End Property
+ 
+ Private Function CaptureImage() As CaptureResultCollection
+ ...
+ End Sub
+    </code>
+	</example>
+</member><member name="P:Mbark.Sensors.BaseSensor.PollingWasCanceled">
+	<summary>
+ Get a boolean value indicating that capture has canceled.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritablePollingWasCanceled">
+	<summary>
+ Set a boolean value indicating that capture is cancel.
+ True is cancel, else False
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.InitializationCommandTemplate">
+	<example>
+		<code lang="VB">
+ Protected Delegate Sub InitializationMethod()
+ Public Overrides Readonly Property InitializationCommandTemplate() As Threading.AsyncCommandTemplate
+      Get
+          Static init As AsyncCommandTemplate
+          If init Is Nothing Then
+              init = New AsyncCommandTemplate
+              With init
+                  .TargetMethod = CreateDelegate(GetType(InitializationMethod), Me, "Initialization")
+                  .ExpirationTime = 30000 'millisecond
+                  .IgnoreUnderlyingHandleOfTargetControl = True
+              End With
+          End If
+          Return init
+      End Get
+ End Property
+ Private Sub Initialization()
+   ...
+ End Sub
+    </code>
+	</example>
+</member><member name="P:Mbark.Sensors.BaseSensor.ConfigurationCommandTemplate">
+	<example>
+		<code lang="VB">
+ Protected Delegate Sub ConfigurationMethod(ByVal config As SensorConfiguration)
+ Public Overrides Readonly Property ConfigurationCommandTemplate() As Threading.AsyncCommandTemplate
+       Get
+           Static config As AsyncCommandTemplate
+           If config Is Nothing Then
+               config = New AsyncCommandTemplate
+               With config
+                   .TargetMethod = CreateDelegate(GetType(ConfigurationMethod), Me, "Configuration")
+                   .ExpirationTime = 30000
+                   .IgnoreUnderlyingHandleOfTargetControl = True
+               End With
+           End If
+           Return config
+       End Get
+ End Property
+ Private Sub Configuration()
+    ...
+ End Sub
+    </code>
+	</example>
+</member><member name="P:Mbark.Sensors.BaseSensor.RequiresConfiguration(Mbark.Sensors.SensorConfiguration)">
+	<summary>
+ Get a boolean value indicating whether the sensor require configuration process.
+ If the new configuration object is different than the exist configuration object, then this property return True, else False.
+ </summary>
+	<param name="NewConfiguration">Current configuration setting of the sensor</param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.RequiresConfiguration">
+	<summary>
+ Get a boolean value indicating whether the sensor require configuration process.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableRequiresConfiguration">
+	<summary>
+ Set a boolean value indicating whether the sensor require configuration process.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableIsTimeout">
+	<summary>
+ Set a boolean value indicating whether the current capture attempt is timeout.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.IsTimeout">
+	<summary>
+ Get a boolean value indicating whether the current capture attempt has timeout.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mbark.Sensors.BaseSensor.MarkAsOffline">
+	<summary>
+ Set the sensor status to offline.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mbark.Sensors.BaseSensor.MarkAsOnline">
+	<summary>
+ Set the sensor status to online.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.LatestDownloadWasSuccessful">
+	<summary>
+ Get a boolean value indicating whether the download process has successfully completed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableLatestDownloadWasSuccessful">
+	<summary>
+ Set a boolean value indicating whether the download process is finish.
+ True if successfully finish, else False.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mbark.Sensors.BaseSensor.CancelDownload">
+	<summary>
+ Cancel download process.
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>Must implement this function if sensor require download and allow download to cancel.</remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.DownloadIsCancellable">
+	<summary>
+ Get a boolean value indicating whether download process can be cancel.
+ </summary>
+	<value></value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableDownloadIsCancellable">
+	<summary>
+ Get or set a boolean value indicatin whether download process can be cancel.
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Mbark.Sensors.BaseSensor.DeferInitialization">
+	<summary>
+ Get a boolean value indicating whether initialization process occur when a
+ session begin.
+ </summary>
+	<value>
+		<strong>true</strong> if only initialize the sensor when performing a task,
+ otherwise <strong>false</strong>. The default is <strong>false</strong>.
+ </value>
+</member><member name="P:Mbark.Sensors.BaseSensor.WritableDeferInitialization">
+	<summary>
+ Set a boolean value indicating whether initialization process occur when a
+ session begin.
+ </summary>
+</member><member name="P:Mbark.Sensors.BaseSensor.RequiresRecovery">
+	<summary>
+ Get or set a boolean value indicating whether the sensor will automatically re-initialize.
+ </summary>
+	<value>
+		<strong>true</strong> if sensor can automatically initialize if failed, otherwise
+ <strong>false</strong>. The default is <strong>false</strong>.
+ </value>
+	<returns>Boolean</returns>
+	<example>
+		<code lang="VB">
+ Private Sub Initialize()
+            RequiresRecovery = False
+            Try
+                ...
+                If noError Then
+                    MarkAsOnline()
+                Else
+                    RequiresRecovery = True
+                    MarkAsOffline()
+                    Dim ife As New InitializationFailureException
+                    ife.MachineNotes = ErrorCodeToString(errorCode)
+                    ife.Sensor = Me
+                    Throw ife
+                End If
+ 
+            Catch ex As Exception
+                RequiresRecovery = True
+                MarkAsOffline()
+                Dim ife As New InitializationFailureException
+                ife.MachineNotes = ex.message
+                ife.Sensor = Me
+                Throw ife
+            End Try
+ 
+        End Sub
+    </code>
+	</example>
+</member>
+</members>
+</doc>

@@ -1,0 +1,16 @@
+C:\MBARK\BiCCL\BiCCL\bin\Debug\BiCCL.dll
+C:\MBARK\BiCCL\BiCCL\bin\Debug\BiCCL.pdb
+C:\MBARK\BiCCL\BiCCL\bin\Debug\antlr.runtime.dll
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Antlr3.Runtime.dll
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Mbark.Infrastructure.dll
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Mbark.Sensors.dll
+C:\MBARK\BiCCL\BiCCL\bin\Debug\StringTemplate.dll
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Mbark.Infrastructure.pdb
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Mbark.Infrastructure.xml
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Mbark.Sensors.pdb
+C:\MBARK\BiCCL\BiCCL\bin\Debug\Mbark.Sensors.xml
+C:\MBARK\BiCCL\BiCCL\obj\Debug\ResolveAssemblyReference.cache
+C:\MBARK\BiCCL\BiCCL\obj\Debug\BiCCL.Properties.Resources.resources
+C:\MBARK\BiCCL\BiCCL\obj\Debug\BiCCL.csproj.GenerateResource.Cache
+C:\MBARK\BiCCL\BiCCL\obj\Debug\BiCCL.dll
+C:\MBARK\BiCCL\BiCCL\obj\Debug\BiCCL.pdb

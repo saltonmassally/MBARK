@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+  <singleOutput enabled="true" path="SafeControlInvokeWrappers.vb">
+    <header>Imports System
+Imports System.Windows.Forms
+
+Namespace Mbark.UI
+</header>
+    <footer>End Namespace
+</footer>
+  </singleOutput>
+  <defaultTemplate path="..\..\Solution\Code Generation\SafeInvokeWrappers.cst" />
+  <propertySets>
+    <propertySet name="SafeInvokeWrappers" template="..\Code Generation\SafeInvokeWrappers.cst">
+      <property name="ControlType">Control</property>
+      <property name="ControlParameterName">control</property>
+      <property name="ValueParameterName">value</property>
+      <property name="PropertyName">Enabled</property>
+      <property name="PropertyType">Boolean</property>
+    </propertySet>
+    <propertySet name="SafeInvokeWrappers" template="..\Code Generation\SafeInvokeWrappers.cst">
+      <property name="ControlType">Control</property>
+      <property name="ControlParameterName">control</property>
+      <property name="ValueParameterName">value</property>
+      <property name="PropertyName">Text</property>
+      <property name="PropertyType">String</property>
+    </propertySet>
+    <propertySet name="SafeInvokeWrappers" template="..\Code Generation\SafeInvokeWrappers.cst">
+      <property name="ControlType">Label</property>
+      <property name="ControlParameterName">control</property>
+      <property name="ValueParameterName">value</property>
+      <property name="PropertyName">Text</property>
+      <property name="PropertyType">String</property>
+    </propertySet>
+    <propertySet name="SafeInvokeWrappers" template="..\Code Generation\SafeInvokeWrappers.cst">
+      <property name="ControlType">Label</property>
+      <property name="ControlParameterName">control</property>
+      <property name="ValueParameterName">value</property>
+      <property name="PropertyName">Visible</property>
+      <property name="PropertyType">Boolean</property>
+    </propertySet>
+  </propertySets>
+</codeSmith>

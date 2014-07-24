@@ -1,0 +1,143 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mbark.Infrastructure
+</name>
+</assembly>
+<members>
+<member name="P:Mbark.Threading.AsyncCommand.CommandId">
+	<summary>Gets a unique identifier for the purposes of referencing the command.</summary>
+</member><member name="P:Mbark.Threading.AsyncCommand.TimeEnqueued">
+	<summary>Gets the time at which the command enters the event queue.</summary>
+</member><member name="P:Mbark.Threading.AsyncCommand.TimeInvoked">
+	<summary>Gets the time at which the target delegate was invoked.</summary>
+	<value>
+ A <strong>DateTime</strong> whose value is the time that the command was invoked,
+ or, if the command was not yet invoked, an uninitialized
+ <strong>DateTime</strong>.
+ </value>
+</member><member name="P:Mbark.Threading.AsyncCommand.TimeCompleted">
+	<summary>Records the time at which the command invokation finished.</summary>
+</member><member name="P:Mbark.Threading.AsyncCommand.IsTimeExpired">
+	<summary>
+ Records if the time it took to execute the command exceeded the expiration
+ time.
+ </summary>
+</member><member name="P:Mbark.Threading.AsyncCommand.TargetException">
+	<summary>Records any exception thrown during the execution of the command.</summary>
+</member><member name="P:Mbark.Threading.AsyncCommand.TargetReturnValue">
+	<summary>Records the value returned by the command (if any).</summary>
+</member><member name="T:Mbark.Threading.AsyncCommand">
+	<summary>
+     Indicates a particular delegate the
+     <see cref="T:Mbark.Threading.AsyncCommandManager">AsyncCommandManager Class</see> should execute,
+     along with its arguments and other control parameters (such as timeouts).
+ </summary>
+</member><member name="P:Mbark.Threading.AsyncCommandTemplate.ExpirationTime">
+	<summary>Determines how long the command is permitted to run until it is cancelled.</summary>
+</member><member name="P:Mbark.Threading.AsyncCommandTemplate.IgnoreUnderlyingHandleOfTargetControl">
+	<summary>
+		<para>Determines if the command queue should ignore or respect the underlying
+    handle of the target object should that object be of type Control. If true, then
+    the delegate is executed in a separate thread. If false, then the command queue
+    will invoke the delegate via the Control.Invoke mechanism built-in to .NET.</para>
+	</summary>
+	<remarks>
+		<para>This property only has an effect on the execution of the target delegate if
+    the delegate's object is of type Control.</para>
+		<para>If the delegate's target property is of type Control, and this property is
+    set to <strong>false</strong>, then the command cannot be set to expire.</para>
+	</remarks>
+	<value>This property is <strong>false</strong> by default.</value>
+</member><member name="P:Mbark.Threading.AsyncCommandTemplate.DefaultInvokationExpirationTime">
+	<summary>Determines the default value</summary>
+</member><member name="T:Mbark.Threading.AsyncCommandTemplate">
+	<summary>
+     A factory class that generates an <see cref="T:Mbark.Threading.AsyncCommand">AsyncCommand 
+ Class</see>
+     based on its internal state. An AsyncCommandTemplate is useful for automating the
+     generation of often instantiated <see cref="T:Mbark.Threading.AsyncCommand">AsyncCommand
+     Class</see>es.
+ </summary>
+</member><member name="M:Mbark.Threading.AsyncCommandManager.#ctor">
+	<summary>Creates a new command queue</summary>
+</member><member name="M:Mbark.Threading.AsyncCommandManager.Enqueue(Mbark.Threading.AsyncCommand)">
+	<summary>
+ Adds a command to the CommandQueue. If the command is blocking, then the calling
+ thread blocks indefinitely until the queue is empty.
+ </summary>
+	<param name="command">The command to be queued.</param>
+</member><member name="T:Mbark.Threading.AsyncCommandManager">
+	<summary>
+ Provides a producer-consumer command queue for the asynchronous, but sequential,
+ execution of otherwise synchronous delegates. The <strong>AsyncCommandManager</strong>
+ differs from the typical "fire and forget" functionality built into .NET by proving a
+ <em>single</em> command thread that waits for a client to enqueue commands, which in
+ turn, are sequentially executed. Upon completing each command, the command thread
+ invokes a result delegate (along with a rich set of arguments so that the client can
+ evaluate the status of that command.
+ </summary>
+	<remarks>
+     For each command in the queue, the AsyncCommandManager first invokes the command's
+     <see cref="P:Mbark.Threading.AsyncCommandTemplate.TargetMethod">target delegate</see>
+	</remarks>
+</member><member name="M:Mbark.UI.SafeControlEnabledGetterAndSetter.SafeSetControlEnabled(System.Windows.Forms.Control,System.Boolean)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a Control.Control property.
+ </summary>
+	<param name="control">Object to have its Enabled set</param>
+	<param name="value">Value assigned to target object's Enabled property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeControlEnabledGetterAndSetter.SafeGetControlEnabled(System.Windows.Forms.Control)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a Control.Control property.
+ </summary>
+	<param name="control">Object from which to retrieve Enabled value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeControlTextGetterAndSetter.SafeSetControlText(System.Windows.Forms.Control,System.String)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a Control.Control property.
+ </summary>
+	<param name="control">Object to have its Text set</param>
+	<param name="value">Value assigned to target object's Text property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeControlTextGetterAndSetter.SafeGetControlText(System.Windows.Forms.Control)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a Control.Control property.
+ </summary>
+	<param name="control">Object from which to retrieve Text value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeLabelTextGetterAndSetter.SafeSetLabelText(System.Windows.Forms.Label,System.String)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a Label.Label property.
+ </summary>
+	<param name="control">Object to have its Text set</param>
+	<param name="value">Value assigned to target object's Text property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeLabelTextGetterAndSetter.SafeGetLabelText(System.Windows.Forms.Label)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a Label.Label property.
+ </summary>
+	<param name="control">Object from which to retrieve Text value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeLabelVisibleGetterAndSetter.SafeSetLabelVisible(System.Windows.Forms.Label,System.Boolean)">
+	<summary>
+ Provides a thread-safe mechanism for setting the value of a Label.Label property.
+ </summary>
+	<param name="control">Object to have its Visible set</param>
+	<param name="value">Value assigned to target object's Visible property</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.UI.SafeLabelVisibleGetterAndSetter.SafeGetLabelVisible(System.Windows.Forms.Label)">
+	<summary>
+ Provides a thread-safe mechanism for getting the value of a Label.Label property.
+ </summary>
+	<param name="control">Object from which to retrieve Visible value</param>
+	<remarks>Automatically generated from SafeInvokeWrappers.cst</remarks>
+</member><member name="M:Mbark.TypeUtilities.ParentmostControl(System.Windows.Forms.Control)">
+	<summary><para>Gets a reference to the top control in a control 
+ hiearchy.</para></summary>
+	<param name="control"><para>The control from which to start the search.</para></param>
+</member>
+</members>
+</doc>

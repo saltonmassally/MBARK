@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<VirtualSensorControllerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--The scenario picker is use to simulate device failures.  If ShowScenarioPicker is false, 
+      the system will use the variables defined in this xml file to configure failure simulation.-->
+  <ShowScenarioPicker>false</ShowScenarioPicker>
+   <!--FaceScenario/FingerprintScenario/IrisScenario value
+       0=AllOkay 
+       1=AlwaysHaveFailure
+       2=AlwaysHaveTimeout
+       3=HaveRandomFailure
+       4=HaveRandomTimeout
+       5=HaveHighFailureRate
+       6=HaveHighTimeoutRate
+       7=NumberOfScenariors-->
+  <FaceScenario>AllOkay</FaceScenario>
+  <FingerprintScenario>AllOkay</FingerprintScenario>
+  <IrisScenario>AllOkay</IrisScenario>
+   <!-- FaceProcessType/FingerpringProcessType/IrisProcessType value   
+   	0=Initialize
+	1=Capture
+	2=Download (not all sensor have download process
+	*NOTE: scenario is AllOkay, don't need to choose a process type it has no affect.  -->
+  <FaceFailureType>Download</FaceFailureType>  
+  <FingerprintFailureType>Capture</FingerprintFailureType>  
+  <IrisFailureType>Initialize</IrisFailureType>
+</VirtualSensorControllerSettings>

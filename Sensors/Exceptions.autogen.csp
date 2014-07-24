@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+  <singleOutput enabled="true" path="Exceptions.autogen.vb">
+    <header>Imports System
+Imports System.Globalization
+Imports System.Runtime.Serialization
+Imports Mbark.SensorMessages
+Imports Mbark.Sensors
+
+Namespace Mbark
+</header>
+    <footer>End Namespace
+</footer>
+  </singleOutput>
+  
+  <defaultProperties>
+    <property name="AssemblyName">Sensors</property>
+    <property name="BaseClassName">MbarkException</property>
+  </defaultProperties>
+  <propertySets>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">BadSensorStatusException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificBadSensorStatusException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">UnexpectedMissingBodyPartException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificUnexpectedMissingBodyPartException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">PollingCanceledException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">CaptureTimeoutException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">CaptureFailureException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">ConfigurationFailureException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">ConfigurationTimeoutException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">DownloadFailureException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">DownloadTimeoutException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">InitializationFailureException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">InitializationTimeoutException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">BadDefinitionException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="BaseClassName">SensorException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">UnfinishedBodyPartsUpdateException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">MissingConditionFactoryException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution2008</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+  </propertySets>
+</codeSmith>

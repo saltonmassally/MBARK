@@ -1,0 +1,528 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9601510A-90FD-4926-89EC-FC59D040DCF0}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Mbark.Sensors</AssemblyName>
+    <AssemblyOriginatorKeyFile>MBARK.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <SignAssembly>false</SignAssembly>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Mbark.Sensors.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Mbark.Sensors.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>none</DebugType>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Core, Version=6.403.0.15, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Base, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=6.403.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.vbproj">
+      <Name>Infrastructure</Name>
+      <Project>{8482B120-5D8A-47B3-A704-FF71FBCDB6F0}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseLoader.vb" />
+    <Compile Include="BaseSensorController.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BodyParts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaptureResult.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaptureResultCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaptureResultCollectionDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaptureResultDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\AttemptEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AttemptPicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AttemptPictureBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BasePickerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseSensor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CancelReasonsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CaptureResultPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConditionsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConflictControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControllerButtonsPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FingerPickerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InaccessibleBodyPartsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IrisPickerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OperatorReviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Refonter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ResultPopup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SensorRecovery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SensorStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SkipTaskForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TaskListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TaskOrAttemptEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeoutDetailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeoutIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exceptions.autogen.vb" />
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="IFaceSensor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISensor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages\SensorMessages.autogen.vb" />
+    <Compile Include="SafeControlInvokeWrappers.vb" />
+    <Compile Include="SensorCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SensorControlMode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SensorExcecption.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SensorProperties.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SensorWorkflow\Interfaces.vb" />
+    <Compile Include="SensorWorkflow\SensorWorkflowSettings.vb" />
+    <Compile Include="Tasks\BooleanCondition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\BuiltinColorSchemes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\BuiltinConditions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\CategoryContainedInSetPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\CompoundAndPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\CompoundOrPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\CompoundPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\Condition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionEnums.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionEqualsLiteralPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionFactory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionFactoryCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionFactoryCollectionDefinition.vb" />
+    <Compile Include="Tasks\ConditionsConflict.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\ConditionValueChangedEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\LiteralPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\NotPredicate.vb" />
+    <Compile Include="Tasks\PredicateDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\PredicateFactory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\Predicates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorModalityEqualsLiteralPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskAttempt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskAttemptCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskCategory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskCollectionDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskColors.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskConflict.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskFactory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskFactoryCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskFactoryCollectionDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTaskFactoryDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\SensorTypeDefinition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tasks\TargetCategoryEqualsLiteralPredicate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="BaseSensorController.resx">
+      <DependentUpon>BaseSensorController.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AttemptEditor.resx">
+      <DependentUpon>AttemptEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AttemptPicker.resx">
+      <DependentUpon>AttemptPicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AttemptPictureBox.resx">
+      <DependentUpon>AttemptPictureBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BasePickerControl.resx">
+      <DependentUpon>BasePickerControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BaseSensor.resx">
+      <DependentUpon>BaseSensor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CancelReasonsControl.resx">
+      <DependentUpon>CancelReasonsControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CaptureResultPanel.resx">
+      <DependentUpon>CaptureResultPanel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ConditionsControl.resx">
+      <DependentUpon>ConditionsControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ConflictControl.resx">
+      <DependentUpon>ConflictControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControllerButtonsPanel.resx">
+      <DependentUpon>ControllerButtonsPanel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FingerPickerControl.resx">
+      <DependentUpon>FingerPickerControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InaccessibleBodyPartsControl.resx">
+      <DependentUpon>InaccessibleBodyPartsControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IrisPickerControl.resx">
+      <DependentUpon>IrisPickerControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OperatorReviewForm.resx">
+      <DependentUpon>OperatorReviewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Refonter.resx">
+      <DependentUpon>Refonter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResultPopup.resx">
+      <DependentUpon>ResultPopup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SensorRecovery.resx">
+      <DependentUpon>SensorRecovery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SensorStatus.resx">
+      <DependentUpon>SensorStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SkipTaskForm.resx">
+      <DependentUpon>SkipTaskForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskListControl.resx">
+      <DependentUpon>TaskListControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskOrAttemptEditor.resx">
+      <DependentUpon>TaskOrAttemptEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeoutDetailForm.resx">
+      <DependentUpon>TimeoutDetailForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeoutIndicator.resx">
+      <DependentUpon>TimeoutIndicator.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.black-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.blue-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.darkgreen-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.green-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.grey-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.hand-disabled.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.hand.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.head-disabled.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.head.png" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.orange-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.red-globe.ico" />
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.yellow-globe.ico" />
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Messages\en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exceptions.autogen.csp" />
+    <None Include="MBARK.snk" />
+    <None Include="Messages\SensorMessages.autogen.csp" />
+    <None Include="SafeControlInvokeWrappers.csp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded Images\Mbark.Sensors.NIST-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Containers\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

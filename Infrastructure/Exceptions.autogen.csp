@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+  <singleOutput enabled="true" path="Exceptions.autogen.vb">
+    <header>Imports System
+Imports System.Globalization
+Imports System.Runtime.Serialization
+Imports Mbark.InfrastructureMessages
+
+Namespace Mbark
+</header>
+    <footer>End Namespace
+</footer>
+  </singleOutput>
+    <defaultProperties>
+    <property name="AssemblyName">Infrastructure</property>
+    <property name="BaseClassName">MbarkException</property>
+  </defaultProperties>
+  <propertySets>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">MbarkException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="BaseClassName">Exception</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">UnreachableCodeException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">TrespassingException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">NoSuchFieldException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificNoSuchFieldException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">MissingSpecializationException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="BaseClassName">TrespassingException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificMissingSpecializationException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">MissingWiringException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="BaseClassName">TrespassingException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificMissingWiringException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">RedundantWiringException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="BaseClassName">TrespassingException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificRedundantWiringException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">ControlIsNotAutosizableException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificControlIsNotAutosizableException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">ControlHasNoSupportForSoughtInterfaceException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificControlHasNoSupportForSoughtInterfaceException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">UnexpectedNumberOfInterfaceSupportersException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificUnexpectedNumberOfInterfaceSupportersException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">TooManyCallsException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="BaseClassName">TrespassingException</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificTooManyCallsException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">NotFormInvokableException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">MissingThreadInterruptedHandlerException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">(none)</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+    <propertySet name="MbarkException" template="..\Code Generation\MbarkException.cst">
+      <property name="ClassName">BadProxyException</property>
+      <property name="MbarkBaseDirectory">C:\MBARK\Solution</property>
+      <property name="GeneralMessage">(none)</property>
+      <property name="SpecificMessage">SpecificBadProxyException</property>
+      <property name="ResourcesClass">Messages</property>
+      <property name="ResXFilename">en-US.resx</property>
+      <property name="BuildResXFilenameAutomatically">True</property>
+    </propertySet>
+  </propertySets>
+</codeSmith>

@@ -1,0 +1,48 @@
+
+About Classes, Definitions, and Collections
+-------------------------------------------
+
+ Let [T] represent some class. 
+  
+ If that class [T] as an accompanying [T]Definition, then there exists:
+	1. a runtime version of that class [T], and
+	2. and a serializable version of that class [T]Definition
+  
+ It is straightfoward to create a runtime-object from a definition object, and vice versa:
+	
+	1. The method [T].Create[T]Definition creates a [T]Definition from a [T]. This [T]Definition
+	   is independent of [T]; that is, changes in [T]Definition do not propogate to the runtime object
+	   the definition was created from.
+	   
+	2. The method [T]Definition.Create[T] creates a [T] from a [T]Definition. Like the previous case,
+	   this [T] is independent of [T]Definition. Changes in [T] do not propogate to the definition object
+	   that the runtime object was create from. 
+	   
+ For a given type, there may exist a Simple[T]Collection, which is a minimal type-safe collection of [T].
+ 
+ A [T]Collection may consist of a collection of [T] objects. A [T]Collection may expose a typesafe
+ a Simple[T]Collection.
+ 
+ The differences between [T]Collection and Simple[T]Collection are twofold.
+	1. Simple[T]Collection classes contains no businses logic, the [T]Collection provides this
+	2. Simple[T]Collection classes are code-generated.
+ 
+ The serializable counterpart to a [T]Collection is a [T]CollectionDefinition. Like [T]Collections,
+ a [T]CollectionDefinition expose a Simple[T]DefinitionCollection.
+ 
+ In summary:
+  								
+ Calling [T].Create[T]Definition() yields a new and independent [T]Definition (serializable) object
+ Calling [T]Definition.Create[T]() yields a new and independent [T] (runtime) object
+ Calling [T]Collection.Create[T]CollectionDefinition yields a new and independent [T]CollecitonDefinition (serializable) object
+ Calling [T]CollectionDefinition.Create[T]Collection yields a new and independent [T]Collection (runtime) object
+   
+   
+   
+   Coding Styles / Rules
+   ---------------------
+   
+   Where desirable, exploit the independent visibility of getter and setter property methods. If the property is implementing the
+   readonly property of an interface, then include a protected version of the property with the prefix of 'Writable.' The getter
+   of such a Writable property should be marked with the 'Obselete' attribute, so that the compiler generates a warning should
+   the getter be exersized.
